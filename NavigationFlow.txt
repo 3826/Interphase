@@ -1,0 +1,1 @@
+BootScene → TitleScene → GameScene → ResultScene → TitleScene

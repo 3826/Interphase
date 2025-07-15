@@ -1,9 +1,9 @@
+/* CSS 1 */
 body {
   margin: 0;
-  background-color: #242424;
-  font-family: Arial, sans-serif;
+  background-color: #000;
   color: white;
-  text-align: center;
+  font-family: sans-serif;
 }
 
 canvas {

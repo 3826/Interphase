@@ -1,18 +1,14 @@
-import Phaser from 'phaser';
-
-const config = {
+// JS 1
+// import Phaser from 'phaser';
+import BootScene from './src/scenes/BootScene.js';
+import TitleScene from './src/scenes/TitleScene.js';
+import GameScene from './src/scenes/GameScene.js';
+import ResultScene from './src/scenes/ResultScene.js';
+// const config = {
   type: Phaser.AUTO,
   width: 800,
   height: 600,
-  backgroundColor: '#242424',
-  scene: {
-    preload: function() {
-      // load assets here if needed
-    },
-    create: function() {
-      this.add.text(400, 300, 'MindStation', { fontSize: '32px', fill: '#ffffff' }).setOrigin(0.5);
-    }
-  }
+  scene: [BootScene, TitleScene, GameScene, ResultScene]
 };
-
 const game = new Phaser.Game(config);
+// export default game;
