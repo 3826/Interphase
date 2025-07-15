@@ -4,16 +4,26 @@ export default class ResultScene extends Phaser.Scene {
     super('ResultScene');
   }
 
+  init(data) {
+    this.reactionTime = data.reactionTime;
+  }
+
   create() {
     const { width, height } = this.scale;
-    this.add.text(width / 2, height / 2 - 20, 'Results', {
-      fontSize: '28px',
+
+    this.add.text(width / 2, height / 2 - 40, 'Your Reaction Time:', {
+      fontSize: '24px',
       color: '#ffffff'
     }).setOrigin(0.5);
 
-    const restartText = this.add.text(width / 2, height / 2 + 40, 'Back to Title', {
-      fontSize: '20px',
+    this.add.text(width / 2, height / 2, `${this.reactionTime} ms`, {
+      fontSize: '32px',
       color: '#00ffcc'
+    }).setOrigin(0.5);
+
+    const restartText = this.add.text(width / 2, height / 2 + 80, 'Try Again', {
+      fontSize: '20px',
+      color: '#ffcc00'
     }).setOrigin(0.5).setInteractive();
 
     restartText.on('pointerdown', () => {
