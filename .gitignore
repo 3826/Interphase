@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.vite/
+*.log
+gitSetup.txt
+NavigationFlow.txt
+txt.txt
