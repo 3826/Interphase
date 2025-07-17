@@ -1,4 +1,3 @@
-// JS 3
 export default class TitleScene extends Phaser.Scene {
   constructor() {
     super('TitleScene');
@@ -6,18 +5,23 @@ export default class TitleScene extends Phaser.Scene {
 
   create() {
     const { width, height } = this.scale;
-    this.add.text(width / 2, height / 2 - 50, 'MindStation', {
-      fontSize: '32px',
-      color: '#ffffff',
+
+    this.add.text(width / 2, height / 2 - 100, 'Interphase', {
+      fontSize: '86px',
+      color: '#00ffcc',
+      fontFamily: 'monospace',
     }).setOrigin(0.5);
 
-    const playText = this.add.text(width / 2, height / 2 + 20, 'Play', {
-      fontSize: '24px',
+    const startBtn = this.add.text(width / 2, height / 2 + 40, 'Begin Sequence', {
+      fontSize: '28px',
       color: '#00ffcc',
-    }).setOrigin(0.5).setInteractive();
+      backgroundColor: '#003333',
+      padding: { x: 20, y: 10 },
+      fontFamily: 'monospace',
+    }).setOrigin(0.5).setInteractive({ useHandCursor: true });
 
-    playText.on('pointerdown', () => {
-      this.scene.start('GameScene');
+    startBtn.on('pointerdown', () => {
+      this.scene.start('ScenarioScene');
     });
   }
 }

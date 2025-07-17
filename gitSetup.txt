@@ -10,3 +10,11 @@ git add .
 git commit -m "Initial commit"
 git branch -M main
 git push -u origin main
+
+
+--
+
+Add changes
+git status                      # Check what's changed
+git add .                       # Stage all changes
+git commit -m "Your message"    # Commit the changes

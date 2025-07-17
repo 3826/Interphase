@@ -1,11 +1,10 @@
-// JS 2
 export default class BootScene extends Phaser.Scene {
   constructor() {
     super('BootScene');
   }
 
   preload() {
-    // preload assets here later
+    // Load assets here if needed
   }
 
   create() {

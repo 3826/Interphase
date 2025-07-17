@@ -1,1 +1,7 @@
-BootScene → TitleScene → GameScene → ResultScene → TitleScene
+(Load → Menu → Task → Results → Menu again)
+
+BootScene (loads) → 
+TitleScene (menu) → 
+GameScene (play) → 
+ResultScene (feedback) → 
+TitleScene
