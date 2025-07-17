@@ -8,7 +8,7 @@ export default class ScenarioScene extends Phaser.Scene {
   create() {
     const { width, height } = this.scale;
 
-    this.add.text(width / 2, 60, 'Select Your Task', {
+    this.add.text(width / 2, 60, 'Select A Task', {
       fontSize: '32px',
       fontFamily: 'monospace',
       color: '#00ffcc'
