@@ -1,6 +1,6 @@
 export default {
   root: './',
-  base: '/interphase/',
+  base: '/Interphase/',
   build: {
     outDir: 'dist',
   },
