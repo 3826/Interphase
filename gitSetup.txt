@@ -18,3 +18,4 @@ Add changes
 git status                      # Check what's changed
 git add .                       # Stage all changes
 git commit -m "Your message"    # Commit the changes
+git push origin main
