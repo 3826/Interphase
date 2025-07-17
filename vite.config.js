@@ -1,7 +1,6 @@
-// vite.config.js
 export default {
   root: './',
-  base: './',
+  base: '/interphase/',
   build: {
     outDir: 'dist',
   },
